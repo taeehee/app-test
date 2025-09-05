@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+body {
+    line-height: 1;
+    background-color: #f5f5f5;
+}
+
+#wrap {
+    max-width: 335px;
+    /* px로 설정(x) 폰마다 다르게 보이므로 %로 설정.
+    item의 w값 / lsit의 w값 * 100 = % */
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 78px;
+}
+
+.header .text_wrap {
+    width: 100%;
+    height: 34px;
+    background-color: blue;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .text_wrap p {
+    font-size: 14px;
+}
+
+.header .inner {
+    width: calc(100% - 40px);
+    /* 좌우마진20*2 미디어쿼리가 없기때문에 본인 해상도의 마진을 빼주면 됨*/
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+}
+
+.header .inner .logo {
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #00ff0d; 확인용 */
+
+}
+
+.header .inner .logo a {
+    height: 100%;
+}
+
+.header .inner .logo a img {
+    width: 64px;
+    display: block;
+    /* 이미지 위에 공간이 있어서 */
+
+}
+
+.header .inner .nav {
+    width: 100%;
+    height: 44px;
+    background-color: #00ff0d;
+    /* 확인용 */
+}
+
+.header .inner .nav .gnb-01 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color:coral */
+
+}
+
+.header .inner .nav .gnb-01 li {}
+
+.header .inner .nav .gnb-01 li a {
+    height: 100%;
+}
+
+.header .inner .nav .gnb-01 li a img {
+    width: 24px;
+}
+
+.header .inner .nav .gnb-02 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    /* background-color:cornflowerblue */
+}
+
+.header .inner .nav .gnb-02 li {}
+
+.header .inner .nav .gnb-02 li a {
+    height: 100%;
+}
+
+.header .inner .nav .gnb-02 li a img {
+    width: 24px;
+}
+
+
+/* main_visual */
+.main_visual {
+    height: 532px;
+    position: relative;
+}
+
+.main_visual .image {
+    height: 100%;
+}
+
+.main_visual .image a {
+    height: 532px;
+}
+
+.main_visual .image a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* 이미지 아래 공백없애주기 */
+}
+
+.main_visual .inner {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.main_visual .inner a {}
+
+.main_visual .inner a .text {
+    width: 100%;
+    position: absolute;
+    bottom: 85px;
+    left: 0;
+    transform: translate();
+    row-gap: 20px; /* 적용안됨 */
+    background-color: #00ff0d;
+}
+
+.main_visual .inner a .text h1 {
+    font-size: 24px;
+}
+
+.main_visual .inner a .text p {
+    font-size: 16px;
+}
