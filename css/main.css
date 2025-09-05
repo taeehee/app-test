@@ -26,7 +26,7 @@ body {
 }
 
 #wrap {
-    max-width: 335px;
+    max-width: 500px;
     /* px로 설정(x) 폰마다 다르게 보이므로 %로 설정.
     item의 w값 / lsit의 w값 * 100 = % */
     margin: 0 auto;
@@ -135,7 +135,7 @@ body {
 /* main_visual */
 .main_visual {
     height: 532px;
-    position: relative;
+    
 }
 
 .main_visual .image {
@@ -155,6 +155,7 @@ body {
 }
 
 .main_visual .inner {
+    position: relative;
     width: calc(100% - 40px);
     margin: 0 auto;
 }
@@ -167,12 +168,13 @@ body {
     bottom: 85px;
     left: 0;
     transform: translate();
-    row-gap: 20px; /* 적용안됨 */
     background-color: #00ff0d;
 }
 
 .main_visual .inner a .text h1 {
     font-size: 24px;
+    white-space: nowrap;
+    margin-bottom: 8px;
 }
 
 .main_visual .inner a .text p {
