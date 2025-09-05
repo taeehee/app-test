@@ -30,7 +30,7 @@ body {
     /* px로 설정(x) 폰마다 다르게 보이므로 %로 설정.
     item의 w값 / lsit의 w값 * 100 = % */
     margin: 0 auto;
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -42,11 +42,11 @@ body {
 .header .text_wrap {
     width: 100%;
     height: 34px;
-    background-color: blue;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0D88D8;
 }
 
 .header .text_wrap p {
@@ -60,7 +60,6 @@ body {
     margin: 0 auto;
     display: flex;
     position: relative;
-    background-color: #fff;
 }
 
 .header .inner .logo {
@@ -69,7 +68,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: #00ff0d; 확인용 */
+    /* background-color: #00ff0d;*/
 
 }
 
@@ -81,14 +80,12 @@ body {
     width: 64px;
     display: block;
     /* 이미지 위에 공간이 있어서 */
-
 }
 
 .header .inner .nav {
     width: 100%;
     height: 44px;
-    background-color: #00ff0d;
-    /* 확인용 */
+    /* background-color: #00ff0d; */
 }
 
 .header .inner .nav .gnb-01 {
@@ -98,7 +95,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     /* background-color:coral */
-
 }
 
 .header .inner .nav .gnb-01 li {}
@@ -169,7 +165,7 @@ body {
     bottom: 85px;
     left: 0;
     transform: translate();
-    background-color: #00ff0d;
+    /* background-color: #00ff0d; */
 }
 
 .main_visual .inner a .text h1 {
@@ -194,13 +190,13 @@ body {
     font-size: 12px;
     position: absolute;
     bottom: 30px;
-    background-color: blue;
+    background-color: rgb(13, 136, 216, 0.9);
 }
 
 .about {
     width: calc(100% - 40px);
     height: 268px;
-    margin: 0 auto;
+    margin: 34px; auto;
     text-align: center;
 
 }
@@ -249,7 +245,7 @@ body {
     width: calc(100% - 40px);
     margin: 0 auto;
     padding: 34px 0 0;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .category .inner .list {
@@ -264,7 +260,7 @@ body {
     width: 15.91%;
     /* item 너비 / list너비 * 100 = 15.91% */
     height: 100%;
-    background-color: #00ff0d;
+    /* background-color: #00ff0d; */
 }
 
 .category .inner .list .item a {
@@ -282,8 +278,8 @@ body {
 
 .category .inner .list .item a p {
     font-size: 12px;
-    background-color: #00ff0d;
     text-align: center;
+    /* background-color: #00ff0d; */
 }
 
 .best {}
@@ -291,8 +287,8 @@ body {
 .best .inner {
     width: calc(100% - 40px);
     margin: 0 auto;
-    margin-top: 34px;
-    background-color: #ff6600;
+    margin-top: 68px;
+    /* background-color: #ff6600; */
 }
 
 .best .inner .text_wrap {
@@ -300,8 +296,8 @@ body {
     height: 29px;
     margin-bottom: 28px;
     display: flex;
-    background-color: #00ff0d;
     position: relative;
+    /* background-color: #00ff0d; */
 
 }
 
@@ -310,7 +306,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .best .inner .text_wrap .title h1 {
@@ -328,7 +324,7 @@ body {
     align-items: center;
     position: absolute;
     right: 0;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 .best .inner .text_wrap .text a p {
@@ -373,7 +369,6 @@ body {
 .best .inner .list .item a .text {
     text-align: center;
     margin: 6px 0 12px;
-
 }
 
 .best .inner .list .item a .text strong {
@@ -393,7 +388,7 @@ body {
 .agit .inner {
     width: 100%;
     height: 187.5px;
-    background-color: #ff6600;
+    /* background-color: #ff6600; */
 }
 
 .agit .inner a {
@@ -415,8 +410,8 @@ body {
     position: absolute;
     bottom: 23px;
     margin-left: 20px;
-    background-color: rgb(179, 255, 0);
-    color: #000;
+   /*  background-color: rgb(179, 255, 0); */
+    color: #000000;
 }
 
 .agit .inner a .text h1 {
@@ -441,7 +436,7 @@ body {
     align-items: center;
     text-align: center;
     margin: 34px 0 28px 0;
-    background-color: #ff6600;
+    /* background-color: #ff6600; */
 }
 
 .insta .inner .text h1 {
