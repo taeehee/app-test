@@ -135,7 +135,6 @@ body {
 /* main_visual */
 .main_visual {
     height: 532px;
-    
 }
 
 .main_visual .image {
@@ -150,19 +149,21 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 18px;
     display: block;
     /* 이미지 아래 공백없애주기 */
 }
 
 .main_visual .inner {
-    position: relative;
     width: calc(100% - 40px);
     margin: 0 auto;
+    position: relative;
 }
 
 .main_visual .inner a {}
 
 .main_visual .inner a .text {
+    /* relative: .inner부터 w값 calc가 적용되기 때문에. 메인비주얼에 지정하면(x) */
     width: 100%;
     position: absolute;
     bottom: 85px;
@@ -173,10 +174,304 @@ body {
 
 .main_visual .inner a .text h1 {
     font-size: 24px;
+    letter-spacing: -2.5%;
     white-space: nowrap;
     margin-bottom: 8px;
 }
 
 .main_visual .inner a .text p {
     font-size: 16px;
+    letter-spacing: -2.5%;
+}
+
+.main_visual .inner a .visual_btn {
+    width: 101px;
+    height: 39px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 30px;
+    background-color: blue;
+}
+
+.about {
+    width: calc(100% - 40px);
+    height: 268px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.about .about-01 {
+    margin-bottom: 10px;
+}
+
+.about .about-01 h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -2.5%;
+    margin-bottom: 4px;
+}
+
+.about .about-01 h1 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -2.5%;
+}
+
+.about .about-02 {}
+
+.about .about-02 p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -2.5%;
+    margin-bottom: 16px;
+}
+
+.about .about-02 span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -2.5%;
+}
+
+/* 가상요소 선택자는 html에? css에 작성? */
+
+.category {}
+
+.category .inner {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 34px 0 0;
+    background-color: #fff;
+}
+
+.category .inner .list {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.category .inner .list .item {
+    width: 15.91%;
+    /* item 너비 / list너비 * 100 = 15.91% */
+    height: 100%;
+    background-color: #00ff0d;
+}
+
+.category .inner .list .item a {
+    width: 100%;
+    height: 100%;
+}
+
+.category .inner .list .item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.category .inner .list .item a p {
+    font-size: 12px;
+    background-color: #00ff0d;
+    text-align: center;
+}
+
+.best {}
+
+.best .inner {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: 34px;
+    background-color: #ff6600;
+}
+
+.best .inner .text_wrap {
+    width: 100%;
+    height: 29px;
+    margin-bottom: 28px;
+    display: flex;
+    background-color: #00ff0d;
+    position: relative;
+
+}
+
+.best .inner .text_wrap .title {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: blue;
+}
+
+.best .inner .text_wrap .title h1 {
+    font-size: 24px;
+}
+
+.best .inner .text_wrap .text {
+    width: 100%;
+}
+
+.best .inner .text_wrap .text a {
+    width: 31px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    background-color: blueviolet;
+}
+
+.best .inner .text_wrap .text a p {
+    font-size: 12px;
+}
+
+.best .inner .text_wrap .text a img {
+    height: 10px;
+}
+
+.best .inner .list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* 컨테이너 넘어가면 줄바꿈 */
+    justify-content: space-between;
+
+}
+
+.best .inner .list .item {
+    width: 47.76%;
+    position: relative;
+}
+
+.best .inner .list .item a {
+    width: 100%;
+    height: 100%;
+}
+
+.best .inner .list .item a .image {
+    width: 100%;
+    height: 160px;
+}
+
+.best .inner .list .item a .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.best .inner .list .item a .text {
+    text-align: center;
+    margin: 6px 0 12px;
+
+}
+
+.best .inner .list .item a .text strong {
+    font-size: 16px;
+
+}
+
+.best .inner .list .item a .text p {
+    font-size: 14px;
+}
+
+.agit {
+    margin-top: 32px;
+
+}
+
+.agit .inner {
+    width: 100%;
+    height: 187.5px;
+    background-color: #ff6600;
+}
+
+.agit .inner a {
+    width: 100%;
+    height: 187.5px;
+    position: relative;
+}
+
+.agit .inner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.agit .inner a .text {
+    width: calc(100% - 40px);
+    /* margin: 0 auto; 포지션쓰면 적용안됨 */
+    position: absolute;
+    bottom: 23px;
+    margin-left: 20px;
+    background-color: rgb(179, 255, 0);
+    color: #000;
+}
+
+.agit .inner a .text h1 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.agit .inner a .text p {
+    font-size: 14px;
+}
+
+.insta {}
+
+.insta .inner {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.insta .inner .text {
+    width: 100%;
+    height: 47px;
+    align-items: center;
+    text-align: center;
+    margin: 34px 0 28px 0;
+    background-color: #ff6600;
+}
+
+.insta .inner .text h1 {
+    font-size: 24px;
+    margin-bottom: 1px;
+}
+
+.insta .inner .text p {
+    font-size: 14px;
+}
+
+.insta .inner .image {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 14px;
+}
+
+.insta .inner .image li {
+    width: 30.44%;
+    height: 102px;
+}
+
+.insta .inner .image li a {
+    width: 100%;
+}
+
+.insta .inner .image li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
